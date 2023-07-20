@@ -43,6 +43,6 @@ func ConnStr(claves models.SecretRDSJson) string {
 	dbEndpoint = claves.Host
 	dbName = "gambit"
 	dsn := fmt.Sprintf("%s:%s@tcp(%s)/%s?allowCleartextPasswords=true", dbUser, authToken, dbEndpoint, dbName)
-	fmt.Println(dsn)
+	// fmt.Println(dsn)
 	return dsn
 }
